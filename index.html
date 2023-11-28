@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fahad's Portfolio</title>
     <style>
       body {
@@ -8,12 +10,12 @@
         margin: 0;
         padding: 0;
         transition: background-color 0.5s, color 0.5s;
-        background-color: #fff;
-        color: #ff0000; /* Red text color */
+        background-color: #f4f4f4; /* Light gray background */
+        color: #333; /* Dark text color */
       }
 
       header {
-        background-color: #ff0000; /* Red header background color */
+        background-color: #333; /* Dark header background color */
         color: #fff;
         text-align: center;
         padding: 30px 0;
@@ -48,10 +50,6 @@
         color: #555;
       }
 
-      #contact-info {
-        margin-top: 20px;
-      }
-
       #skills {
         font-size: 1.2em;
         font-weight: bold;
@@ -66,15 +64,19 @@
       #social-links a {
         display: inline-block;
         margin: 0 10px;
-        color: #ff0000; /* Red link color */
+        color: #333; /* Dark link color */
         text-decoration: none;
         font-size: 20px;
         transition: color 0.3s;
       }
 
+      #social-links a:hover {
+        color: #ff0000; /* Highlight color on hover */
+      }
+
       body.dark-mode {
-        background-color: #333;
-        color: #fff;
+        background-color: #222; /* Dark gray background in dark mode */
+        color: #ddd; /* Light text color in dark mode */
       }
 
       body.dark-mode header {
@@ -82,7 +84,7 @@
       }
 
       body.dark-mode #main-content {
-        background-color: #222;
+        background-color: #333; /* Dark background in dark mode */
         color: #ddd;
       }
 
@@ -93,15 +95,38 @@
         padding: 10px;
         cursor: pointer;
         background-color: #fff;
-        color: #ff0000; 
+        color: #333;
         border: none;
         border-radius: 5px;
+      }
+
+      #footer {
+        background-color: #333; /* Dark footer background color */
+        color: #fff;
+        text-align: center;
+        padding: 5px 0; /* Smaller padding */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 12px; /* Smaller font size */
+      }
+
+      #social-links-footer {
+        text-align: center;
+        color: #000; /* Black link color in the footer */
+        margin-top: 10px;
+      }
+
+      #social-links-footer a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000; /* Black link color in the footer */
       }
     </style>
   </head>
   <body>
     <header>
-      <img id="profile-photo" src="fahad.jpg" />
+      <img id="profile-photo" src="fahad.jpg" alt="Fahad's Profile Photo" />
       <h1>Fahad</h1>
     </header>
 
@@ -109,16 +134,18 @@
 
     <div id="main-content">
       <p>
-        Hey! I'm Fahad and I'm a designer, CSS developer, and illustrator. I
-        love working on the web and making sure it continues to be a place for
-        everyone and our creative, personal, and weird passions.
+        I'm, a second-year BCA student and aspiring programmer, seamlessly
+        merges his love for technology and music. Navigating the digital
+        frontier, he harmonizes the rhythm of algorithms with the beats of his
+        favorite melodies, using tech symposiums as his compass in this
+        ever-evolving landscape.
       </p>
 
       <p>
-        To that end, I've built a collection of weirdly specific projects
-        dedicated to airport codes, age gaps in film, fake movies in movies,
-        state flags, Arizona, and television shows The Good Place, Schitt's
-        Creek, and Top Chef.
+        ⚽ Beyond the screen, i dons cleats, swapping code for orchestrating
+        plays on the football field with the finesse he applies to programming.
+        Leadership is intrinsic to his persona, guiding both his team on the
+        field and the digital symphony he conducts.
       </p>
 
       <p id="skills">Skills</p>
@@ -127,15 +154,26 @@
         <li>CSS</li>
         <li>JavaScript</li>
       </ul>
+    </div>
 
-      <div id="social-links">
-        <a href="https://instagram.com/fa_hadd_?igshid=OGQ5ZDc2ODk2ZA"
-          ></i> Instagram</a
-        >
-        <a href="https://wa.link/mugl4s"
-          ></i> WhatsApp</a
-        >
-      </div>
+    <div id="social-links">
+      <a
+        href="https://instagram.com/fa_hadd_?igshid=OGQ5ZDc2ODk2ZA"
+        target="_blank"
+        >Instagram</a
+      >
+      <a href="https://wa.link/mugl4s" target="_blank">WhatsApp</a>
+    </div>
+
+    <div id="footer">&copy; Fahad 2023</div>
+
+    <div id="social-links-footer">
+      <a
+        href="https://instagram.com/fa_hadd_?igshid=OGQ5ZDc2ODk2ZA"
+        target="_blank"
+        >Instagram</a
+      >
+      <a href="https://wa.link/mugl4s" target="_blank">WhatsApp</a>
     </div>
 
     <script>
